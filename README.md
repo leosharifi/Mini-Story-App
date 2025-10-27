@@ -1,3 +1,5 @@
+![Mini-Story-App Screenshot](./public/projectDemo.png)
+
 # Mini-Story-App
 
 Mini-Story-App is a simple React application that allows users to create, edit, and manage small stories. Each story includes the author’s name, title, date, and detailed content. The app saves stories to **localStorage**, so they persist between page reloads.
@@ -13,14 +15,6 @@ Mini-Story-App is a simple React application that allows users to create, edit, 
 - Responsive and clean design.
 - Stories are saved to localStorage for persistence.
 - Built with love ❤️ using React.
-
----
-
-## Screenshots
-
-<!-- You can add screenshots here -->
-
-![Mini-Story-App Screenshot](link-to-your-screenshot.png)
 
 ---
 
