@@ -18,7 +18,7 @@ Mini-Story-App is a simple React application that allows users to create, edit, 
 - ✏️ Edit existing stories inline.  
 - 🗑️ Delete stories individually or clear all at once.  
 - 💾 Stories are saved to **localStorage** for persistence.  
-- 🧭 Created another page called **NoPage** using **React Router**.  
+- 🧭 Created another page called **No Page (404)** using **React Router**.  
 - 🎨 Responsive and clean design.  
 - ❤️ Built with love using **React**.
 
