@@ -1,0 +1,270 @@
+/* -------- global reset -------- */
+.form-root,
+.form-root * {
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    transition: all var(--transition);
+
+}
+
+/* outer container */
+.form-root {
+    background: var(--bg);
+    padding: 28px;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+/* card wrapper */
+.form-card {
+    width: 100%;
+    max-width: 760px;
+    background: var(--card);
+    border-radius: calc(var(--radius) + 4px);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+/* controls at top */
+.form-controls {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+/* multiple inputs layout */
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+/* main input style */
+.input-main {
+    flex: 1 1 180px;
+    min-width: 150px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: #fff;
+    color: var(--text);
+    font-size: 15px;
+    outline: none;
+    box-shadow: none;
+}
+
+.story-detail {
+    height: 200px;
+}
+
+.input-main:focus {
+    border-color: var(--accent-2);
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+}
+
+/* alternating background for multiple inputs */
+.input-main:nth-child(odd) {
+    background: #f9fafb;
+}
+
+/* buttons generic */
+.btn {
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--text);
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* button types */
+.btn-primary {
+    background: linear-gradient(180deg, var(--accent-2), #1e40af);
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.12);
+}
+
+.btn-ghost {
+    background: rgba(15, 23, 42, 0.03);
+    color: var(--text);
+}
+
+.btn-save {
+    background: linear-gradient(180deg, #22c55e, var(--success));
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(16, 185, 129, 0.08);
+}
+
+.btn-delete {
+    background: transparent;
+    color: var(--danger);
+    border: 1px dashed rgba(239, 68, 68, 0.12);
+}
+
+.btn-clear {
+    background: transparent;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* story list layout */
+.story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+/* story item */
+.story-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
+}
+
+.story-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* read-only input style */
+.inputResult {
+    flex: 1 1 auto;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text);
+    font-size: 15px;
+    outline: none;
+    height: 180px;
+}
+
+/* editing input style */
+.input-edit {
+    flex: 1 1 auto;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    background: #fff;
+    color: var(--text);
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.06);
+}
+
+/* editing the story details input */
+
+.edit-story-detail {
+    height: 200px;
+}
+
+/* inline controls for each story */
+.item-controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* small buttons for story items */
+.item-controls .btn {
+    padding: 8px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+/* empty state */
+.empty-state {
+    color: var(--muted);
+    text-align: center;
+    padding: 18px;
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.02);
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* subtle animations */
+.fade-in {
+    animation: fadeIn 260ms ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* hover and focus states */
+.btn:hover {
+    filter: brightness(0.98);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(2, 6, 23, 0.06);
+}
+
+.story-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.04);
+}
+
+.input-main:focus,
+.input-edit:focus,
+.inputResult:focus,
+.btn:focus {
+    outline: 3px solid rgba(37, 99, 235, 0.12);
+    outline-offset: 2px;
+}
+
+/* responsive tweaks */
+@media (max-width: 520px) {
+    .form-card {
+        padding: 14px;
+    }
+
+    .form-controls {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .item-controls {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,22 @@
+/* -------- variables -------- */
+:root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #ef4444;
+    --accent-2: #2563eb;
+    --text: #111827;
+    --success: #10b981;
+    --danger: #ef4444;
+    --radius: 10px;
+    --gap: 12px;
+    --shadow: 0 6px 18px rgba(17, 24, 39, 0.06);
+    --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+    --transition: 180ms cubic-bezier(.2, .9, .3, 1);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,16 @@
+.no-page-container {
+    background-color: black;
+    height: 100vh;
+    padding: 0;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+    }
+
+}
