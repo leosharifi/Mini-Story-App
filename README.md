@@ -26,7 +26,15 @@ Mini-Story-App is a simple React application that allows users to create, edit, 
    ```bash
    git clone https://github.com/leoSharifi/mini-story-app.git
    ```
-2. Run the Project:
+2. Navigate to the project folder:
+   ```bash
+   cd mini-story-app
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the Project:
    ```bash
    npm run dev
    ```
