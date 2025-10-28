@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path="*" element={<NoPage />} />
         <Route path="/" element={<Form />} />
+        <Route path="/home" element={<Form />} />
       </Routes>
     </>
   );
