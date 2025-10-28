@@ -2,6 +2,8 @@ import "./Form.css";
 import { useState, useEffect } from "react";
 
 export default function Form() {
+  <title>Mini-Story</title>;
+
   const [author, setAuthor] = useState("");
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
